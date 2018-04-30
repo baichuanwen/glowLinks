@@ -23,7 +23,8 @@
     components: {
       leftside,
       setting,
-      footers
+      footers,
+      
     },
     created: function() {
     
