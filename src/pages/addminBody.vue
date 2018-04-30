@@ -24,6 +24,10 @@
       leftside,
       setting,
       footers,
+      
+    },
+    created: function() {
+    
     },
   
     computed: {
