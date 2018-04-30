@@ -25,9 +25,7 @@
       setting,
       footers,
     },
-    created: function() {
-    
-    },
+  
     computed: {
     },
     methods: {
