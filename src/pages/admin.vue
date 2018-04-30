@@ -16,12 +16,12 @@
               </a>
               <dl class="layui-nav-child">
                 <dd><a @click="goRouter()">基本资料</a></dd>
-                <dd><a  @click='sayShab'>安全退出</a></dd>
+                <dd><a  @click='saySha'>安全退出</a></dd>
               </dl>
             </li>
           </ul>
         </div>
-            <router-view></router-view>
+          <router-view></router-view>
   </div>
     </div>
   </div>
@@ -49,8 +49,9 @@
       goRouter(){
         this.$router.push({path: '/self'});
       },
-      sayShab(){
+      saySha(){
            this.layerMsg("没接口 退不出啊")
+            this.$router.push({path: '/'});
       }
     },
   }

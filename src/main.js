@@ -11,8 +11,6 @@ cookie.set("authId","f36d3b88fa713365950b257736867f48");
 cookie.set("Hm_lvt_551f6c0558181afeb7d3b4292f3b87bf","1524847513,1524927052");
 cookie.set("Hm_lpvt_551f6c0558181afeb7d3b4292f3b87bf","1524927052");
 router.push('/main/arrange/4')
-
-
 new Vue({
   data(){
     return{

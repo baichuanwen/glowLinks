@@ -10,4 +10,4 @@ export const  updataCampaign  = (parm)=> fetch(`/proxy/auth/updateCampaign`,parm
 export const  addSpot  = (parm)=> fetch(`/proxy/auth/createSpot`,parm);
 export const  fetchEcharts = (pacampaignIdrm)=> fetch(`/proxy/auth/getSpotLineGraphic`,campaignId);
 export const  updataPass = (param)=> fetch(`/proxy/auth/resetPassword`,param);
-export const  campLinks = (param)=> fetch(`/proxy/exportdata`,{param});
+export const  campLinks = (param)=> fetch(`/proxy/exportdata`,param);
