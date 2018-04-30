@@ -4,7 +4,7 @@
       <div class="layui-layout layui-layout-admin">
         <div class="layui-header">
           <div class="layui-logo"><img src="../asests/images/logo_02.png" alt=""></div>
-           <ul class="layui-nav layui-layout-left">
+           <ul class="layui-nav layui-layout-left" v-if="navShow" >
             <li class="layui-nav-item">
               <a href="javascript:;" @click="createNewCamp"> <i class="layui-icon" style="font-size: 22px; color: #ffF;"> &#xe608;</i> New Campaign</a>
             </li>
@@ -33,8 +33,18 @@
     name: 'HelloWorld',
     data() {
       return {
-       
+         navShow:true
       }
+    },
+    watch:{
+    '$route' (to) {
+           if(to.path=="/self"||to.path.indexOf("campginLinks")>-1){
+                    this.navShow=false
+                }else{
+                    this.navShow=true
+                }
+                
+            }
     },
    created: function() {
       layui.use("element", function() {
@@ -52,7 +62,8 @@
       saySha(){
            this.layerMsg("没接口 退不出啊")
             this.$router.push({path: '/'});
-      }
+      },
+     
     },
   }
 </script>
