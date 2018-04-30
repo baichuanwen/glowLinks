@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../asests/styles/restet.css">
+    <link rel="stylesheet" href="../asests/styles/home.css">
+</head>
+<body>
+   <div class="container">
+    <header class="clearfix">
+        <div class="fl"><a href="/"><img src="../asests/images/logo.png" alt=""></a></div>
+        <div class="fr"><span class="login">登录</span><span class="register">注册</span></div>
+    </header>
+    <div class="content">
+        <div class="fixed-section bg">
+            <img class="txt" src="../asests/images/txt.png" alt="">
+        </div>
+        <div class="transparent-bg"></div>
+        <div class="product-intro">
+                <div class="s2">
+                        <p class="txt2">
+                            <b>什么是GlowingLink?</b>
+                        </p>
+                        <div class="icos">
+                            <div class="ico ico1">
+                                <img src=" ../asests/images/ico1.png">
+                                <p class="txt3 t31">大梦想</p>
+                                <p class="txt4 el-3">我们是三个乙方狗，从事营销和互联网，原本想开发一款相当复杂的全功能营销数据平台，奈何还没有找到投资方。</p>
+                            </div>
+                            <div class="ico ico2">
+                                <img src=" ../asests/images/ico2.png">
+                                <p class="txt3 t32">小工具</p>
+                                <p class="txt4 el-3"> 没钱支撑的大梦想，最后变成了一款小工具。我们将您的营销落地页地址封装，用封装后的地址去引流，就可以在后台看到每天的真实点击量。
+                                </p>
+                            </div>
+                            <div class="ico ico3">
+                                <img src=" ../asests/images/ico3.png">
+                                <p class="txt3 t33">不要钱</p>
+                                <p class="txt4 el-3">呐，可不要小看，市面上是没有免费的点击量监测工具的。既然做不成大平台，我们就索性免费开放给同行们使用，希望大家用的开心，也欢迎反馈给我们任何的信息
+                                </p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="product-use">
+                    <div class="s3">
+                            <div class="txt5">简单几步搞定一切</div>
+                            <div class="txt6">新建Campaign</div>
+                            <div class="txt7">设定LandingPage，点位数量，有效时间。 </div>
+                            <div class="txt6">发布链接</div>
+                            <div class="txt7">一键批量导出链接，快速部署。</div>
+                            <div class="txt6">查看数据</div>
+                            <div class="txt7">多维度数据记录，直观展示推广效果</div>
+                            <img src=" ../asests/images/ico4.png" class="ico4">
+                            <img src=" ../asests/images/ico5.png" class="ico5">
+                            <img src=" ../asests/images/ico6.png" class="ico6">
+                            <img src=" ../asests/images/ui.png" class="ui">
+                        </div>
+    </div>
+    <div class="nothing-bg">
+  </div>
+    <div class="oline2"></div>
+		<div class="s6">
+			<p class="txt13">Copyright © 2016 GlowingLink.com, All Rights
+				Reserved.</p>
+		</div>
+    
+   </div>
+   <div class="login_wrap" style="display: none;">
+        <div class="login_layer">
+            <div class="eamail form_input">
+                <span>邮箱</span> <input class="eamil"  ref="eamil"  v-model="email" type="email" placeholder="请输入您的用户名">
+            </div>
+            <div class="form_input">
+                <span>密码</span> <input  ref="password"   class="password" type="password" v-model="password" placeholder="请输入您的密码">
+            </div>
+            <p class="register_link">
+                点击注册，表示您已阅读并同意  <a href="">用户协议</a>
+            </p>
+            <input class="submit_login login_sub" style="font-size: 20px;" @click="login_sub" type="button" value='登录或注册' />
+            <p class="page_links">
+              <label ref="errTip" class="errTip" style="float:left;color:red"></label>
+                <a href="html/forgetpassword" style="color: #999; position: relative;right: 40%;">忘记密码？</a>
+            </p>
+        </div>
+    </div>
+    <div class="register_tip2 hide">
+            <div style="padding: 15px;margin-top: 50px;">
+                <h3 style="text-align: center;">Sorry</h3>
+                <p style="text-align: center;">您的账号尚未激活</p>
+                <p style="text-align: center;">请前往您注册使用的邮箱查收验证邮件</p>
+                <input class="submit_login close_dlg layui-layer-close" type="button" value='关闭' />
+            </div>
+        </div>
+        <div class="register_tip" style="display: none;" >
+                <div style="padding: 15px;margin-top: 50px;">
+                    <h3 style="text-align: center;">注册成功</h3>
+                    <p style="text-align: center;">验证邮件已发送到您的邮箱</p>
+                    <p style="text-align: center;">激活成功后您才可以使用GlowingLink</p>
+                    <input class="submit_login close_dlg layui-layer-close" type="button" value='关闭' />
+                </div>
+            </div>
+               <script src='../asests/untils/jquery.min.js'></script>
+               <script src='../asests/untils/layer/layer.js'></script>
+            <script>
+                  function checkEmail(str){
+                      var reg = /^(\w-*\.*)+@(\w-?)+(\.\w{2,})+$/
+                      if (reg.test(str)) {
+                          return true;
+                      } else {
+                          return false;
+                      }
+                  };
+              $(function () {
+                $(".login,.register").click(function () {
+                       loginDlg = layer.open({
+                            type: 1,
+                            area: ['430px', "350px"], //宽高
+                            content: $(".login_wrap")
+                        });
+                    });
+                    //登录验证
+                    $("body").on("click", "login_sub", function () {
+                        var email = $.trim($(".layui-layer-content").find(".eamil").val());
+                        var password = $.trim($(".layui-layer-content").find(".password").val());
+                        if (!checkEmail(email)) {
+                            $(".layui-layer-content").find(".errTip").show().fadeOut(3000).html("请输入正确的邮箱格式");
+                            $(".layui-layer-content").find(".eamil").focus();
+                            return false;
+                        }
+                        alert(1)
+                        if (password == "") {
+                            $(".layui-layer-content").find(".errTip").show().fadeOut(3000).html("请输入密码");
+                            $(".layui-layer-content").find(".password").focus();
+                            return false;
+                        }
+                        $.post("/proxy/noauth/loginOrRegister", { email: email, passwd: password }, function (res) {
+                            if (res && res.data && res.data == 1) {  //登录成功!
+                                window.location.href = ctx + "/dashboard/index";
+                            } else if (res && res.data && res.data == 2) { //注册成功！
+                                layer.close(loginDlg);
+                                var html = $(".register_tip").html();
+                                regTipDlg = layer.open({
+                                    type: 1,
+                                    area: ['350px', "350px"], //宽高
+                                    content: html
+                                });
+                            } else if (res && res.errCode == -2) { //注册了但是未激活；
+                                layer.close(loginDlg);
+                               
+                                regTipDlg2 = layer.open({
+                                    type: 1,
+                                    area: ['350px', "350px"], //宽高
+                                    content: $(".login_wrap")
+                                });
+                            } else if (res && res.errCode == -1) {
+                                layer.alert(res.errMsg, { icon: 2, anim: -1, area: ['400px', '200px'] });
+                            } else {
+                                layer.alert(res.msg, { icon: 2, anim: -1, area: ['400px', '200px'] });
+                            }
+                        }, "json")
+                    })
+
+                    $("body").on("click", "input.close_dlg", function () {
+                        layer.close(regTipDlg);
+                        layer.close(regTipDlg2);
+                    });
+
+                   
+                });
+            
+            
+       </script>
+</body>
+
+
+</html>

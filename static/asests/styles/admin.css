@@ -1,0 +1,199 @@
+body {
+  user-select: none;
+}
+.re-build .layui-header {
+  height: 70px;
+  line-height: 70px;
+}
+.re-build .layui-layout-left {
+  left: 180px;
+  top: 0;
+}
+.re-build .layui-layout-left .layui-nav-item a {
+  font-size: 16px;
+  color: #000;
+}
+.re-build .layui-layout-left .layui-nav-item {
+  height: 70px    ;
+  background: #ff6633;
+}
+.re-build .layui-logo {
+  line-height: 70px;
+}
+.re-build .layui-side {
+  top: 70px;
+}
+.re-build .layui-side .layui-nav-tree .layui-nav-child a {
+  padding: 10px 20px;
+  text-align: center;
+  line-height: 1.5;
+  color: #fff;
+}
+.re-build .layui-side .layui-nav-tree .layui-nav-child a em {
+  font-size: 10px;
+  font-style: normal;
+  color: #999;
+  float: left;
+}
+.re-build .layui-tab {
+  margin: 26px 3px;
+}
+.re-build .title_name {
+  float: left;
+}
+.re-build td {
+  border: none;
+  padding-left: 20px;
+  text-align: right;
+  padding-right: 30px;
+}
+.re-build .layui-tab-title .layui-this:after {
+  border-radius: 6px 6px 0 0;
+  border-bottom: 2px solid #f80;
+}
+.re-build .layui-layout-admin .layui-footer {
+  height: 70px;
+  background: #55b3ca;
+}
+.re-build #down_btn {
+  position: absolute;
+  bottom: 10px;
+  height: 50px;
+  right: 30px;
+  width: 120px;
+  padding: 0;
+  line-height: 50px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+}
+.re-cols .layui-row div {
+  border: 1px  solid  #ddd;
+  border-left: 0;
+  padding: 30px 0;
+}
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+td.Total_click,
+td.spots_num {
+  border: none;
+  border-right: 1px solid #ccc;
+}
+.re-form div {
+  padding: 15px 0;
+}
+.re-form textarea {
+  width: 450px;
+  padding: 5px;
+  border: 1px  solid #bfbfbf;
+}
+.re-form select {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+.re-form input {
+  padding: 5px;
+  width: 400px;
+}
+.re-form .layui-col-md10 a {
+  cursor: pointer;
+  border-radius: 4px;
+  display: block;
+  height: 40px;
+  width: 100px;
+  padding: 0 20px ;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  background: #ff6633;
+  position:relative;
+}
+.self-center h2 {
+  font-size: 18px;
+  margin-top: 20px;
+  line-height: 30px;
+  margin-left: 40px;
+  margin-bottom: 15px;
+}
+.self-center .layui-row {
+  font-size: 16px;
+  text-align: left;
+  padding: 10px 0;
+}
+.self-center input {
+  padding: 6px;
+  width: 300px;
+  border-radius: 4px;
+  border: 1px  solid  #ddd;
+}
+.self-center .submit-btn {
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 4px;
+  background: #ff6633;
+  color: #fff;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+}
+.spots_num strong {
+  margin-top: -15px;
+  display: inline-block;
+  font-size: 50px;
+  color: #ff7a4e;
+  font-weight: normal;
+}
+.Total_click strong {
+  margin-top: -15px;
+  display: inline-block;
+  font-size: 50px;
+  color: #ff7a4e;
+  font-weight: normal;
+}
+.re-build   .layui-table td.nodata {
+  font-size: 16px;
+  text-align: left;
+padding:20px 80px
+  
+}
+.layui-table  th{
+	text-align:center;
+}
+.layui-table td{
+	text-align:center !important
+}
+.search_btn{
+
+}
+.hello  .layui-layout-body{
+	overflow:visible;
+}
+#focusedInput{
+border-radius:  20px;
+margin-bottom:10px;
+background-color: white;
+color:  black;
+height: 30px;
+padding-left:25px;
+width: 60%;
+}
