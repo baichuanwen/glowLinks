@@ -12,7 +12,7 @@ export default {
          }
      },
      watch:{
-         '$route' (to, from) {
+         '$route' (to) {
                 if(to.name=="arrange") {
                     this.showFooter=true
                 }else{
